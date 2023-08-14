@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RentalAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-14T18:53:48" hostname="Seans-Air.attlocal.net" time="0.046">
+<testsuite name="RentalAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-14T21:21:14" hostname="Seans-Air.attlocal.net" time="0.045">
   <properties/>
-  <testcase name="test()" classname="RentalAppTest" time="0.046"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="test()" classname="RentalAppTest" time="0.045"/>
+  <system-out><![CDATA[java.util.GregorianCalendar[time=1691125200000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="America/Chicago",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2023,MONTH=7,WEEK_OF_YEAR=31,WEEK_OF_MONTH=1,DAY_OF_MONTH=4,DAY_OF_YEAR=216,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=1,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=-21600000,DST_OFFSET=3600000]
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
