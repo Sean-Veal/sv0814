@@ -1,7 +1,15 @@
 package org.example.model;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import org.example.util.FormatUtil;
+
 import java.util.Date;
 
+@Getter
+@Setter
+@Builder
 public class RentalAgreement {
     // Specified at checkout
     private ToolCode toolCode;
@@ -40,13 +48,20 @@ public class RentalAgreement {
                 "\n Tool type: " + toolType +
                 "\n Tool brand: " + toolBrand +
                 "\n Rental days: " + rentalDays +
-                "\n Checkout date: " + checkoutDate +
-                "\n Due date: " + dueDate +
-                "\n Daily Rental Charge: " + dailyRentalCharge +
+                "\n Checkout date: " + FormatUtil.dateFormatter.format(checkoutDate) +
+                "\n Due date: " + FormatUtil.dateFormatter.format(dueDate) +
+                "\n Daily Rental Charge: " + FormatUtil.currencyFormatter.format(dailyRentalCharge) +
                 "\n Charge days: " + chargeDays +
-                "\n Pre Discount Charge: " + preDiscountCharge +
-                "\n Discount Percent: " + discountPercent +
-                "\n Discount Amount: " + discountAmount +
-                "\n Final Charge: " + finalCharge;
+                "\n Pre Discount Charge: " + FormatUtil.currencyFormatter.format(preDiscountCharge) +
+                "\n Discount Percent: " + FormatUtil.percentFormat.format(discountPercent / 100.0) +
+                "\n Discount Amount: " + FormatUtil.currencyFormatter.format(discountAmount) +
+                "\n Final Charge: " + FormatUtil.currencyFormatter.format(finalCharge);
+        System.out.println("Rental Agreement\n " + printValue);
     }
+
+    public static class RentalAgreementBuilder {
+        public RentalAgreementBuilder() {}
+    }
+
+
 }

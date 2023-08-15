@@ -6,4 +6,6 @@ import java.text.SimpleDateFormat;
 public class FormatUtil {
     public static NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
     public static SimpleDateFormat dateFormatter = new SimpleDateFormat("MM/dd/yyyy");
+
+    public static NumberFormat percentFormat = NumberFormat.getPercentInstance();
 }

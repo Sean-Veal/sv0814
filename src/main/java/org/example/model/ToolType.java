@@ -1,8 +1,8 @@
 package org.example.model;
 
 public enum ToolType {
-    CHAINSAW(1.99, true, true, false),
-    LADDER(1.49, true, false, true),
+    CHAINSAW(1.99, true, false, true),
+    LADDER(1.49, true, true, false),
     JACKHAMMER(2.99, true, false, false);
 
     private double dailyCharge;
